@@ -45,7 +45,7 @@ sidebar.setHeight(percentage(100));
 content.setBGColor("#fff");
 content.setWidth(percentage(80));
 content.setHeight(percentage(100));
-content.setText('Evet, JavaScript ile bir DOM elemanına stil vermek için object (nesne) şeklinde de stil verebilirsiniz. Bu yaklaşımda, stil özelliklerini bir nesne içinde tanımlayıp, ardından her özelliği bir döngü ile DOM elemanının style özelliğine ekleyebilirsiniz.')
+content.setText('DOM manipulation with JavaScript has never been easier! DOM Manipulator combines style, animation, and structure management in a single library.')
 content.setStyle({
   padding: '0 100px',
   display: 'flex',
