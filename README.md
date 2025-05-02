@@ -2,7 +2,7 @@
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub Issues](https://img.shields.io/github/issues/vugarsafarzada/dom-manipulator)
-![GitHub Stars](https://img.shields.io/github/stars/vugarsafarzada/dom-stargazers)
+![GitHub Stars](https://img.shields.io/github/stargazers/vugarsafarzada/dom-manipulator)
 
 **DOM Manipulator** is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.
 
