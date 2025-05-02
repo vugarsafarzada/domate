@@ -1,6 +1,6 @@
-import { Container } from "./dom-manipulator";
-// Example Usage:
+import { Container } from "./dom-manipulator.js";
 
+// Example Usage:
 const body = new Container();
 const { pixel, percentage, viewHeight } = body;
 

@@ -147,6 +147,10 @@ export class DOMElement {
    * @default {x: 0, y: 0}
    */
   setPosition(coordinates = { x: 0, y: 0 }) {
+    if (!coordinates || typeof coordinates.x !== 'number' || typeof coordinates.y !== 'number') {
+      console.warn('Invalid coordinates, using default { x: 0, y: 0 }');
+      coordinates = { x: 0, y: 0 };
+    }
     this.element.style.top = coordinates.y;
     this.element.style.left = coordinates.x;
   }
@@ -156,12 +160,12 @@ export class DOMElement {
    * @returns {object} The position of the element with x and y values.
    */
   getPosition() {
+    const style = window.getComputedStyle(this.element);
     return {
-      x: this.element.style.left,
-      y: this.element.style.bottom,
+      x: parseFloat(style.left) || 0,
+      y: parseFloat(style.top) || 0,
     };
   }
-
   /**
    * Sets the transition duration speed of the main element.
    * @param {number} value - The transition duration in milliseconds.
@@ -202,7 +206,12 @@ export class DOMElement {
    * @default value: [].
    */
   setHTML(value = []) {
+    if (!Array.isArray(value)) {
+      console.warn('setHTML expects an array, received:', value);
+      return;
+    }
     this.element.innerHTML = value
+      .filter(item => item instanceof HTMLElement)
       .map(item => item.outerHTML)
       .join('');
   }
@@ -311,7 +320,7 @@ export class Container extends DOMElement {
   removeChild(index) {
     const target = this.children[index];
     if (target) {
-      this.children.splice(0, index);
+      this.children.splice(index, 1);
       this.element.removeChild(target);
     }
   }
