@@ -317,6 +317,9 @@ class Container extends DOMElement {
   }
 }
 
+
+// Example Usage:
+
 const body = new Container();
 const { pixel, percentage, viewHeight } = body;
 
@@ -368,46 +371,4 @@ content.setStyle({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center'
-});
-
-
-
-
-
-const mainElement = new Container(document.createElement("div"));
-body.addChild(mainElement.element);
-mainElement.setId("app");
-mainElement.setBGColor("white");
-
-mainElement.setHeight(mainElement.pixel(0));
-mainElement.setWidth(mainElement.pixel(mainElement.getHeight()));
-
-function animation1() {
-  console.clear();
-  console.log("count:", count);
-  if (count % 5 === 0) {
-    if (count2 % 2 === 0) {
-      steps.push(animation1);
-    } else {
-      steps.pop();
-    }
-  }
-  mainElement.setHeight(mainElement.percentage(2));
-  mainElement.setWidth(mainElement.percentage(count / 10));
-  mainElement.setText(`${count / 10}% - ${count2} package installed...`);
-  mainElement.element.style.textAlign = "center";
-  if (count === 1000) {
-    count = 0;
-    count2 = count2 + 1;
-  }
-}
-
-let count = 1;
-let count2 = 0;
-let steps = [animation1];
-
-mainElement.animationQueue(steps, {
-  speed: 500,
-  stopLoop: false,
-  every: () => (count = count + 1),
 });
