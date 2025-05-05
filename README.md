@@ -30,7 +30,13 @@ To add Domate to your project, follow these steps:
    <script src="path/to/script.js"></script>
    ```
 
-3. **CDN (Coming Soon)**:
+3. **Install via npm**:
+
+   ```bash
+   npm install domate
+   ```
+
+4. **CDN** (Coming Soon):
    CDN support is not currently available but may be added in the future.
 
 ## Usage
@@ -128,27 +134,31 @@ This code creates a responsive web page with a header, sidebar, content area, an
 ### API Reference
 
 #### `DOMElement` Class
+
 Provides core DOM manipulation functionality.
 
-- **Methods**:
-  - `pixel(value)`: Converts a number to pixel units (e.g., `"100px"`).
-  - `percentage(value)`: Converts a number to percentage units (e.g., `"50%"`).
-  - `viewWidth(value)`: Converts a number to viewport width units (e.g., `"50vw"`).
-  - `viewHeight(value)`: Converts a number to viewport height units (e.g., `"50vh"`).
-  - `setId(id)`: Sets the element's ID.
-  - `setBGColor(color)`: Sets the background color (default: `"#000"`).
-  - `setWidth(value)`: Sets the width (default: `"100px"`).
-  - `setHeight(value)`: Sets the height (default: `"100px"`).
-  - `setPosition({ x, y })`: Sets the position (default: `{ x: 0, y: 0 }`).
-  - `setStyle(styles)`: Applies multiple styles (e.g., `{ display: "flex" }`).
-  - `animationQueue(order, options)`: Runs a sequential animation queue.
+* **Methods**:
+
+  * `pixel(value)`: Converts a number to pixel units (e.g., `"100px"`).
+  * `percentage(value)`: Converts a number to percentage units (e.g., `"50%"`).
+  * `viewWidth(value)`: Converts a number to viewport width units (e.g., `"50vw"`).
+  * `viewHeight(value)`: Converts a number to viewport height units (e.g., `"50vh"`).
+  * `setId(id)`: Sets the element's ID.
+  * `setBGColor(color)`: Sets the background color (default: `"#000"`).
+  * `setWidth(value)`: Sets the width (default: `"100px"`).
+  * `setHeight(value)`: Sets the height (default: `"100px"`).
+  * `setPosition({ x, y })`: Sets the position (default: `{ x: 0, y: 0 }`).
+  * `setStyle(styles)`: Applies multiple styles (e.g., `{ display: "flex" }`).
+  * `animationQueue(order, options)`: Runs a sequential animation queue.
 
 #### `Container` Class
+
 Extends `DOMElement` and adds child element management.
 
-- **Methods**:
-  - `addChild(child)`: Adds a child element.
-  - `removeChild(index)`: Removes a child element at the specified index.
+* **Methods**:
+
+  * `addChild(child)`: Adds a child element.
+  * `removeChild(index)`: Removes a child element at the specified index.
 
 ## Contributing
 
@@ -164,12 +174,13 @@ Please ensure your contributions adhere to the [Contributing Guidelines](CONTRIB
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
 
 ## Contact
 
 For questions or suggestions:
-- GitHub Issues: [Open a new issue](https://github.com/vugarsafarzada/domate/issues)
-- Email: vuqarsfrzad@gmail.com
+
+* GitHub Issues: [Open a new issue](https://github.com/vugarsafarzada/domate/issues)
+* Email: [vuqarsfrzad@gmail.com](mailto:vuqarsfrzad@gmail.com)
 
 Enjoy building modern, dynamic web applications with Domate!

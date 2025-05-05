@@ -1,4 +1,4 @@
-import { Container } from "./script.js";
+import { Container } from "../src/script.js";
 
 // Example Usage:
 const body = new Container();
