@@ -1,24 +1,24 @@
 {
-  "name": "dom-manipulator",
+  "name": "domate",
   "version": "1.0.0",
-  "description": "DOM Manipulator is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.",
-  "main": "dom-manipulator.js",
+  "description": "Domate is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.",
+  "main": "script.js",
   "type": "module",
   "scripts": {
     "test": "-"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vugarsafarzada/dom-manipulator.git"
+    "url": "git+https://github.com/vugarsafarzada/domate.git"
   },
   "keywords": [
     "dom",
-    "dom-manipulator"
+    "domate"
   ],
   "author": "Vugar Safarzada",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vugarsafarzada/dom-manipulator/issues"
+    "url": "https://github.com/vugarsafarzada/domate/issues"
   },
-  "homepage": "https://github.com/vugarsafarzada/dom-manipulator#readme"
+  "homepage": "https://github.com/vugarsafarzada/domate#readme"
 }

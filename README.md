@@ -1,10 +1,10 @@
-# DOM Manipulator
+# Domate
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
-![GitHub Issues](https://img.shields.io/github/issues/vugarsafarzada/dom-manipulator)
-![GitHub Stars](https://img.shields.io/github/stars/vugarsafarzada/dom-manipulator)
+![GitHub Issues](https://img.shields.io/github/issues/vugarsafarzada/domate)
+![GitHub Stars](https://img.shields.io/github/stars/vugarsafarzada/domate)
 
-**DOM Manipulator** is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.
+**Domate** is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.
 
 ## Features
 
@@ -17,17 +17,17 @@
 
 ## Installation
 
-To add DOM Manipulator to your project, follow these steps:
+To add Domate to your project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/vugarsafarzada/dom-manipulator.git
+   git clone https://github.com/vugarsafarzada/domate.git
    ```
 
 2. **Include the Library in Your Project**:
-   Copy the library file (`dom-manipulator.js`) to your project and include it in your HTML file using a `<script>` tag:
+   Copy the library file (`script.js`) to your project and include it in your HTML file using a `<script>` tag:
    ```html
-   <script src="path/to/dom-manipulator.js"></script>
+   <script src="path/to/script.js"></script>
    ```
 
 3. **CDN (Coming Soon)**:
@@ -35,7 +35,7 @@ To add DOM Manipulator to your project, follow these steps:
 
 ## Usage
 
-DOM Manipulator provides a simple yet powerful API. Below is an example of creating a fully JavaScript-driven web page:
+Domate provides a simple yet powerful API. Below is an example of creating a fully JavaScript-driven web page:
 
 ### Example: Building a Simple Web Page
 
@@ -101,7 +101,7 @@ content.setBGColor("#fff");
 content.setWidth(percentage(80));
 content.setHeight(percentage(100));
 content.setText(
-  "DOM manipulation with JavaScript has never been easier! DOM Manipulator combines style, animation, and structure management in a single library."
+  "DOM manipulation with JavaScript has never been easier! Domate combines style, animation, and structure management in a single library."
 );
 content.setStyle({
   padding: pixel(100),
@@ -152,9 +152,9 @@ Extends `DOMElement` and adds child element management.
 
 ## Contributing
 
-Want to contribute to DOM Manipulator? Follow these steps:
+Want to contribute to Domate? Follow these steps:
 
-1. Fork the repository: `https://github.com/vugarsafarzada/dom-manipulator`
+1. Fork the repository: `https://github.com/vugarsafarzada/domate`
 2. Create a new branch: `git checkout -b feature/your-feature`
 3. Make your changes and commit: `git commit -m "Add your feature"`
 4. Push your branch: `git push origin feature/your-feature`
@@ -169,7 +169,7 @@ This project is licensed under the [MIT License](LICENSE). See the `LICENSE` fil
 ## Contact
 
 For questions or suggestions:
-- GitHub Issues: [Open a new issue](https://github.com/vugarsafarzada/dom-manipulator/issues)
+- GitHub Issues: [Open a new issue](https://github.com/vugarsafarzada/domate/issues)
 - Email: vuqarsfrzad@gmail.com
 
-Enjoy building modern, dynamic web applications with DOM Manipulator!
+Enjoy building modern, dynamic web applications with Domate!
