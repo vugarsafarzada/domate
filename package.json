@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Domate is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS.",
   "main": "./src/script.js",
-  "types": "./types/index.d.ts",
+  "types": "./types/script.d.ts",
   "type": "module",
   "scripts": {
     "test": "-"
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/vugarsafarzada/domate#readme",
   "devDependencies": {
-    "typescript": "^4.x.x"
+    "typescript": "^5.8.0"
   }
 }

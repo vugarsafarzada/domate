@@ -1,4 +1,15 @@
 # Domate
+<div align="center">
+    <br />
+    <br />
+    <p>
+        <a href="https://www.npmjs.com/package/domate"><img src="https://img.shields.io/npm/v/domate?color=blue&label=version" alt="version" /></a>
+        <a href="https://www.npmjs.com/package/domate"><img src="https://img.shields.io/npm/dt/domate" alt="downloads" /></a>
+    </p>
+    <p>
+        <a href="https://www.npmjs.com/package/domate"><img src="https://nodei.co/npm/domate.png?downloads=true&downloadRank=true&stars=true" alt="information" /></a>
+    </p>
+</div>
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub Issues](https://img.shields.io/github/issues/vugarsafarzada/domate)
