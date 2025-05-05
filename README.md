@@ -46,6 +46,9 @@ Domate provides a simple yet powerful API. Below is an example of creating a ful
 ### Example: Building a Simple Web Page
 
 ```javascript
+// Importing the classes
+import { DOMElement, Container } from 'domate';
+
 // Create the body container
 const body = new Container();
 const { pixel, percentage, viewHeight } = body;

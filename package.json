@@ -1,8 +1,9 @@
 {
   "name": "domate",
   "version": "1.0.0",
-  "description": "Domate is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS. Designed for developers building dynamic and programmatic web interfaces, it offers powerful features like style management, animation queues, and child element handling, making it ideal for modern web applications.",
+  "description": "Domate is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS.",
   "main": "./src/script.js",
+  "types": "./types/domate.d.ts",
   "type": "module",
   "scripts": {
     "test": "-"
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/vugarsafarzada/domate/issues"
   },
-  "homepage": "https://github.com/vugarsafarzada/domate#readme"
+  "homepage": "https://github.com/vugarsafarzada/domate#readme",
+  "devDependencies": {
+    "typescript": "^4.x.x"
+  }
 }
