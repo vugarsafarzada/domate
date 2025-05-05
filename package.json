@@ -1,6 +1,6 @@
 {
   "name": "domate",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Domate is a lightweight and flexible JavaScript library that enables full control over the DOM with minimal HTML and CSS.",
   "main": "./src/script.ts",
   "types": "./src/types/domate.d.ts",
