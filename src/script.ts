@@ -151,8 +151,8 @@ export class DOMElement {
       console.warn('Invalid coordinates, using default { x: 0, y: 0 }');
       coordinates = { x: 0, y: 0 };
     }
-    this.element.style.top = coordinates.y.toString();
-    this.element.style.left = coordinates.x.toString();
+    this.element.style.top = this.pixel(coordinates.y);
+    this.element.style.left = this.pixel(coordinates.x);
   }
 
   /**

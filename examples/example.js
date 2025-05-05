@@ -2,54 +2,68 @@ import { Container, DOMElement } from "../dist/script.js";
 
 // Example Usage:
 const body = new Container();
-const { pixel, percentage, viewHeight } = body;
+const app = new Container(document.getElementById('app'));
+const { 
+    pixel, 
+    percentage, 
+    viewHeight, 
+    viewWidth,
+    seconds
+} = body;
+body.setWidth(viewWidth(100))
+body.setHeight(viewHeight(100))
 
-const main = new Container(document.createElement("main"));
-const header = new Container(document.createElement("header"));
-const footer = new Container(document.createElement("footer"));
-const sidebar = new Container(document.createElement("aside"));
-const content = new Container(document.createElement("div"));
-
-// body area
-body.addChild(header.element);
-body.addChild(main.element);
-body.addChild(footer.element);
-body.setHeight(viewHeight(100));
-
-// main area
-main.addChild(sidebar.element);
-main.addChild(content.element);
-main.setBGColor("#fff");
-main.setWidth(percentage(100));
-main.setHeight(percentage(80));
-main.setStyle({
-  display: 'flex',
+body.setStyle({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden'
 });
 
-// header area
-header.setBGColor("#eee");
-header.setWidth(percentage(100));
-header.setHeight(percentage(6));
 
-// footer area
-footer.setBGColor("#333");
-footer.setWidth(percentage(100));
-footer.setHeight(percentage(13));
+app.setSize(pixel(0));
+app.setStyle({borderRadius: percentage(100)})
+app.setBGColor('red');
+app.setTransitionDuration(0.5);
 
-// sidebar area
-sidebar.setBGColor("#f5f5f5");
-sidebar.setWidth(percentage(20));
-sidebar.setHeight(percentage(100));
+const getRandomBetween = function (min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
-// content area
-content.setBGColor("#fff");
-content.setWidth(percentage(80));
-content.setHeight(percentage(100));
-content.setText('DOM manipulation with JavaScript has never been easier! Domate combines style, animation, and structure management in a single library.')
-content.setStyle({
-  padding: '0 100px',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center'
+let count = 0
+let toggle = true;
+body.animationQueue([
+    () => {
+        app.setSize(pixel(count));
+        app.setBGColor('white')
+    
+        app.setPosition({
+            x: getRandomBetween(count * -1, count),
+            y: getRandomBetween(count * -1, count)
+        });
+    },
+    () => {
+        app.setSize(pixel(1000 - count));
+        app.setBGColor(`#${getRandomBetween(100, 999)}`)
+        app.setPosition({
+            x: (0),
+            y: (0)
+        });
+        if(count > 1000 && toggle === true) {
+          toggle = false
+        }
+        if(count < 1 && toggle === false) {
+          toggle = true;
+        }
+    },
+], {
+    speed: 900,
+    stopLoop: false,
+    every: () => {
+        if(toggle) {
+          count = count + 10;
+        } else {
+          count = count - 10
+        }
+    }
 });
