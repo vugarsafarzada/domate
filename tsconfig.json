@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es6",                   
+      "module": "esnext",                
+      "moduleResolution": "node",        
+      "strict": false,                    
+      "esModuleInterop": true,           
+      "skipLibCheck": true,              
+      "declaration": true,               
+      "outDir": "./dist",                
+      "baseUrl": "./src",                
+      "paths": {
+        "domate": ["./types/domate.d.ts"]
+      }
+    },
+    "include": [
+      "src/**/*.ts"                      
+    ],
+    "exclude": ["node_modules"]           
+  }
+  

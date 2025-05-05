@@ -1,4 +1,4 @@
-import { Container } from "../src/script.js";
+import { Container, DOMElement } from "../dist/script.js";
 
 // Example Usage:
 const body = new Container();
